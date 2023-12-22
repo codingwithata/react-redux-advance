@@ -31,3 +31,5 @@ const notesSlice = createSlice(options);
 export const { addNote, removeNote } = notesSlice.actions;
 
 export default notesSlice.reducer;
+
+export const selectAllNotes = (state) => state.notes.notes;
